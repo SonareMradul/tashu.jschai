@@ -1,3 +1,5 @@
+// ***************************conversions******************************************
+
 let score = '45' // string can be written in single or double quotes or even backticks
 console.log(typeof score);
 console.log(typeof(score)); // typeof can be used as a keyword or function
@@ -18,6 +20,16 @@ let someNumber = 42
 let stringNumber = String(42)
 console.log(stringNumber);
 console.log(typeof stringNumber);
+
+//************************************operations**************************************** */
+let value = 3;
+let negValue = -value
+console.log(negValue);
+//operations are +,-,*,/,**,%
+let str1 = "hi"
+let str2 = " Mradul"
+console.log(str1 + str2);
+// dont use tricky conversions in your code use brackets to prioritize calculations although practice for interviews
 
 
 
