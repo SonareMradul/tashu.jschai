@@ -3,7 +3,7 @@
 let score = '45' // string can be written in single or double quotes or even backticks
 console.log(typeof score);
 console.log(typeof(score)); // typeof can be used as a keyword or function
-let valueInNumber = Number(score) //when using data types names in code use them in capital letters othervise node will show an error
+let valueInNumber = Number(score) //when using data types names in code use them in capital letters othervise node.js will show an error
 console.log(typeof(valueInNumber)); 
 let my_name = "manu123"
 console.log(Number(my_name));

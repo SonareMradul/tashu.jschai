@@ -5,7 +5,7 @@ console.log(user +" has "+ repoCount + " repositories on github");
 console.log(`Hello my name is ${user} and i have ${repoCount} github repos`);
 // cool and new syntax and better and you can use methods on the go and helps in string interpolation
 console.log(`Hello my name is ${user.toUpperCase()} and my repocount us ${repoCount} `);
-//whenever use a function don't forget to put parenthese after the function name.
+//whenever use a function don't forget to put parentheses after the function name.
 
 // another way to declare a string is
 const gameName = new String('Vice city')

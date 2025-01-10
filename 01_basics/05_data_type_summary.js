@@ -24,13 +24,14 @@ let useremail
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id === anotherId);
+console.log(id === anotherId); // false
 
 // variable name should make sense not random a, b, c
 const bigNumber = 27894389526789657839468765482396n //(n lga do last me to bigiNT bn jayega )
 
 // array
 const MeghaNames = ["challuu", "malluu", "palluu"]
+//object
 const Megha = {
     name : "tikotu",
     age : 5,

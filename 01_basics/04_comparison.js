@@ -1,6 +1,6 @@
-console.log(null>0);
-console.log(null == 0);
-console.log(null>=0);
+console.log(null>0); //false
+console.log(null == 0); //false
+console.log(null>=0); //true
 // equality and comparison operator works differently as comparisons convert null to a number
 // treating it as 0
 // to strictly check === it is used it always compare two same data type entities
