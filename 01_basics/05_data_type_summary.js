@@ -2,13 +2,13 @@
 // primitive and non-primitive(reference)
 
 //primitve : call by value -> 7 in number
-// 7 -> String, Number, Boolean, null, undefiend, Symbol, BigInt
+// 7 -> String, Number,BigInt, Boolean, null, undefiend, Symbol
 
 //Reference or non primitive :
 // Array, Objects, Functions
 // if you want to master javascript , master object and browser/web events.
 
-//in typerscript you write const score:number = 56(type safety)
+//in typescript you write const score:number = 56(type safety)
 // js is a dynamically typed language
 
 //uses

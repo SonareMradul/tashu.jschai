@@ -5,7 +5,7 @@ console.log(3
     +
     3
 );//considered bad practice
-//tc39.es(ecma script ) is the best documentation of js (https://tc39.es/ecma262/2023/multipage/)
+//tc39.es(ecma script ) is the original documentation of js (https://tc39.es/ecma262/2023/multipage/)
 let name = "mradul" //string=> under double quotes ""
 let age = 22 //number => 2 to power 53 and bigint for big numbers
 let isLoggedIn = false //boolean (true or false)
