@@ -17,6 +17,26 @@ console.log(money.toLocaleString('en-In'))// converts to readable form // deault
 //console me Number. krke bahut saari properties dekh skte ho
 //******************************maths**************************** */
 //math is object in javascript
+// console.log(Math);// has lot of functions availible
+console.log(Math.abs(-4)); //converts to absolue(positive value)
+console.log(Math.round(4.67));
+console.log(Math.round(4.2));
+console.log(Math.ceil(4.1));//upper value
+console.log(Math.floor(4.9));//lower value
+console.log(Math.min(4,3,2,1)); // min value of an array
+console.log(Math.max(3,6,9,1)); // max value of an array
+console.log(Math.random()*10+1);
+const min = 10;
+const max = 20;
+console.log(Math.floor(Math.random()*10)+1);
+console.log(Math.floor(Math.random()*(max-min))+min); //+min isiliye because min value is 10 and usse to jyada hi chahiye number
+
+
+
+
+
+
+
 
 
 
