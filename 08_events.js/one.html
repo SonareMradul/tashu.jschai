@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;">
+    <h2 style="color: antiquewhite;">amazing images</h2>
+    <div>
+        <ul id="images">
+            <li><img src="https://images.pexels.com/photos/18079894/pexels-photo-18079894/free-photo-of-white-force-gurkha-in-mud-and-sand.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" id="pic1"  width="200px" alt="photo1" onclick="alert('clicked')"></li>
+            //onclick should not be used in large scale projects
+            <li><img src="https://images.pexels.com/photos/12138615/pexels-photo-12138615.png?auto=compress&cs=tinysrgb&w=600&lazy=load" id="pic2"  width="200px" alt="photo2"></li>
+            <li><img src="https://images.pexels.com/photos/16342979/pexels-photo-16342979/free-photo-of-yellow-troller-t4.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" 
+            id="pic3"    width="200px"   alt="photo3"></li>
+            <li><img src="https://images.pexels.com/photos/14518942/pexels-photo-14518942.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" id="pic4"  width="200px" alt="photo4"></li>
+            <li><img src="https://images.pexels.com/photos/28770958/pexels-photo-28770958/free-photo-of-rugged-off-road-adventure-in-pasig-philippines.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"  id="pic5"   width="200px"alt="photo5"></li>
+            <li ><a id="google" style="color: rgb(255, 255, 255);" href="https://www.google.co.in/">google</a></li>
+        </ul>
+    </div>
+    <script>
+//         document.getElementById('pic2').onclick = function(){
+//             alert('2nd pic clicked')
+//         }// better but not best approach
+
+//         document.getElementById("pic4").addEventListener('click', function(e){
+//             alert('double clicked')
+//             console.log(e);
+//             })
+//         // in era of internet Explorer we dont use attachEvent() --> obsolete now
+//         //jQuery -- not preffered (no need to learn)
+
+// // kya kya padhna hai
+// //types of events, timestamp , preventdefault
+// // target , toElement , SrcElement, currentTarget
+// // clientX , clientY , screenX , screenY
+// // altkey , ctrlkey , keyCode, shiftkey 
+
+// // event bubbling (false or default)
+//     // event capturing (true)
+//     // e.stopPropagation stops bubbling or capturing 
+
+// document.getElementById('images').addEventListener('click',function(){
+//     console.log('clicked images');
+    
+// }, true)
+// document.getElementById('pic3').addEventListener('click',function(e){
+//     console.log('clicked pic3');
+//     e.stopPropagation()// to stop event bubbling
+// }, )
+// document.getElementById('google').addEventListener('click', (e)=> {
+// //   e.preventDefault()
+    
+// })
+// mini project
+// image pr click kro to image gayab ho jaye
+document.getElementById('images').addEventListener('click', (e)=>{
+    console.log(e.target);
+    // isse hume us element ka tag mil jaata h browser me jis pr click kr rhe
+    console.log(e.target.parentNode); 
+    // isse clicked tag ka parent node mil jaata h
+    let relement = e.target.parentNode.remove()
+    // amazing
+    // remove() is new and simple syntax method
+    relement.parentNode.removeChild(relement)
+    // removeChild is used by accessing parent and when u want to delete a particular child
+    // lekin agr aap li pr click kr dete ho like bullet points are images ke bahar ya parent div ke kisi aise part pr jahan image na ho to wo apne parent element mtlb ul ko hi delete kr dega  
+})
+    </script>
+</body>
+</html>
