@@ -57,15 +57,25 @@
 // image pr click kro to image gayab ho jaye
 document.getElementById('images').addEventListener('click', (e)=>{
     console.log(e.target);
+    console.log(e.target.tagName);
+    if(e.target.tagName == 'IMG'){
+        console.log(e.target.id);
+        
+        let relement = e.target.parentNode
+        relement.remove()
+        relement.parentNode.removeChild(relement)
+        // remove() se element remove ho gya to removeChild() kya remove krega😏
+
+    }
     // isse hume us element ka tag mil jaata h browser me jis pr click kr rhe
     console.log(e.target.parentNode); 
     // isse clicked tag ka parent node mil jaata h
-    let relement = e.target.parentNode.remove()
     // amazing
     // remove() is new and simple syntax method
-    relement.parentNode.removeChild(relement)
-    // removeChild is used by accessing parent and when u want to delete a particular child
-    // lekin agr aap li pr click kr dete ho like bullet points are images ke bahar ya parent div ke kisi aise part pr jahan image na ho to wo apne parent element mtlb ul ko hi delete kr dega  
+    // removeChild() is used by accessing parent and when u want to delete a particular child
+    // lekin agr aap li pr click kr dete ho like bullet points are images ke bahar ya parent div ke kisi aise part pr jahan image na ho to wo apne parent element mtlb ul ko hi delete kr dega
+    // so phle hum seekhenge ki jis element pr click krenge uska tagname console pr laana
+      
 })
     </script>
 </body>
