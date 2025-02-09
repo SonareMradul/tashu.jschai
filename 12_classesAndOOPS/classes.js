@@ -43,7 +43,7 @@ console.log(user4.constructor);
 
 
 
-// oops ke baare me or pdhna h
+// oops ke baare me or pdhna h instanceOf bhi pdhna h
 
 
 
