@@ -27,7 +27,7 @@ function mainUser(username,loginCount,signedIn){
         
     }
     // return this // it is implicit behaviour return nhi likhoge to bhi return krega
-}
+} // but code should be verbose yaa not like java😏
 const user1 = mainUser('tashu',5, false)
 const user2 = mainUser('Mradul',10, true)
 console.log(user1); // isme user 2 ki values aayengi because user2 ne user1 ko overwrite kr liya isiliye hum constructor using new keyword use krenge because constructor hmesha ek new instance(copy) provide krta h object ki
