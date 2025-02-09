@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=hq, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="button">stop</button>
+
+</body>
+<script>
+    setTimeout(function(){
+        console.log('hitesh');      // by using function in setTimeOut
+        
+    },3000)
+
+    const sayMradul = function(){
+        console.log('hi ms');
+    }
+    const stopIt = setTimeout(sayMradul,3000)    // by giving reference
+                                  // so not using ()
+    // you can stop setTimeout working by clearTimeout
+    clearTimeout(stopIt)
+    // but it is not making sense that first we are doing and then undoing it 
+    
+    setInterval(() => {
+        
+    }, interval);
+</script>
+</html>

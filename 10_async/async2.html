@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai Aur Javascript</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>   
+</body>
+<script>
+    let set;
+    document.querySelector('#start').addEventListener('click', function(){
+    set = function(surname){
+        console.log(`hitesh ${surname}`,Date.now());
+    } 
+        let stopThis = setInterval(set,1000,"choudhary")
+
+    document.querySelector('#stop').addEventListener('click',function(){
+    clearInterval(stopThis)
+    // console.log("stopped");
+    
+})
+})
+    // clear interval bhi hota h
+    // isko reference ki trh bhi paas kr skte
+    // setInterval me parameters bhi pass kr skte h
+
+
+
+
+
+</script>
+</html>
